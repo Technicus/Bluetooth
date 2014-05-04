@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ghost Scanner</string>
+    <string name="title_section1">Bluetooth</string>
+    <string name="title_section2">Lights</string>
+    <string name="title_section3">Switches</string>
+    <string name="title_section4">Solenoids</string>
+    <string name="title_section5">Motors</string>
+    <string name="title_section6">About</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="Text">Status: -</string>
+    <string name="on">Turn On</string>
+    <string name="off">Turn Off</string>
+    <string name="List">List paired Devices</string>
+    <string name="Find">Search new Devices / Cancel</string>
+
+</resources>
