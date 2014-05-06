@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Ghost Scanner/Ghost Scanner.iml" filepath="$PROJECT_DIR$/Ghost Scanner/Ghost Scanner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ghost Scanner/Ghost Scanner.iml" filepath="$PROJECT_DIR$/Ghost Scanner/Ghost Scanner.iml" />
       <module fileurl="file://$PROJECT_DIR$/GhostScanner.iml" filepath="$PROJECT_DIR$/GhostScanner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GhostScanner_Delux-master.iml" filepath="$PROJECT_DIR$/GhostScanner_Delux-master.iml" />
     </modules>
   </component>
 </project>

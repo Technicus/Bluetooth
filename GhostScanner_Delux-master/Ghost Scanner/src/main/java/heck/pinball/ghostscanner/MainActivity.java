@@ -1,21 +1,22 @@
 package heck.pinball.ghostscanner;
 
-import java.util.Locale;
-
-import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.os.Bundle;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
-import android.view.Gravity;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.SeekBar;
 import android.widget.TextView;
 // import heck.pinball.ghostscanner.AboutFragment;
 
@@ -30,7 +31,29 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
      * may be best to switch to a
      * {@link android.support.v4.app.FragmentStatePagerAdapter}.
      */
-    SectionsPagerAdapter mSectionsPagerAdapter;
+
+    public static final String TAG = "MAIN";
+
+   public static final boolean DEBUG = true;
+
+   private static String DEVICE_ADDRESS;
+
+   private BluetoothHandlerSPP btConn;
+
+   private BluetoothHandler btHandler;
+
+   private UpdateThread updateThread;
+
+   private static boolean CONNECTED = false;
+   public static boolean OVERRIDE = false;
+
+   public SeekBar sbMeter;
+   private ImageView ivNeedle;
+   private ImageButton ibConnect;
+
+   public int position = 0;
+
+   SectionsPagerAdapter mSectionsPagerAdapter;
 
     /**
      * The {@link ViewPager} that will host the section contents.
@@ -228,4 +251,125 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
         }
     }
 
+   private class UpdateThread extends Thread {
+      private boolean running = false;
+      private BluetoothHandlerSPP btConn;
+      private String tempMSG;
+
+      // private int index;
+      // private int[] testing = {90, 90, 110, 180, 90, 90, 70, 00};
+
+      public UpdateThread(BluetoothHandlerSPP btConn, BluetoothHandler btHandler) {
+         this.btConn = btConn;
+
+         running = true;
+         MainActivity.this.runOnUiThread(new Runnable() {
+            public void run() {
+               // Button btnConnect = (Button)
+               // findViewById(R.id.btnConnect);
+               // btnConnect.setText(R.string.button_disconnect);
+            }
+         });
+      }
+
+      public void run() {
+         while (running)
+            try {
+               Thread.sleep(250);
+               tempMSG = btConn.getMessage();
+               if (!tempMSG.isEmpty()) {
+                  Log.d(TAG, "RCVD MESSAGE: " + tempMSG);
+                  decodeMessage(tempMSG);
+               }
+
+            } catch (InterruptedException interrupt) {
+               Log.e(TAG, "sleep interrupted", interrupt);
+               this.cancel();
+            } catch (Exception e) {
+               Log.e(TAG, "other thread exception", e);
+               this.cancel();
+            }
+
+      }
+
+      private String makeTwoDig(int checkInt) {
+         if (Math.abs(checkInt) < 10)
+            return ("0" + checkInt);
+         else
+            return ("" + checkInt);
+      }
+
+      private String getPacket() {
+         String message;
+
+         try {
+            ;
+            // devIDInt = Integer.parseInt(etAccess.getText().toString());
+         } catch (Exception e) {
+            ;
+            // devIDInt = 0;
+         }
+
+         message = "!";
+         // message += makeTwoDig(devIDInt);
+         // message += command;
+         message += makeTwoDig(sbMeter.getProgress() + 1);
+         // if ((sbMeter.getProgress() + 1) >= 10)
+         // message += 0;
+         // else
+         // message += sbMeter.getProgress() + 1;
+         message += (char) (0x0D);
+
+         // Log.d(TAG, "Packet is : " + packet);
+
+         return message;
+      }
+
+      private void sendPacket(String packet) {
+         btConn.write(packet);
+      }
+
+      public void decodeMessage(final String inString) {
+         MainActivity.this.runOnUiThread(new Runnable() {
+            int tempIndex = -1;
+            char tempchar1, tempchar2;
+
+            public void run() {
+               try {
+                  tempIndex = inString.indexOf(0x21);
+                  if (tempIndex != -1) {
+                     tempchar1 = inString.charAt(tempIndex + 1);
+                     tempchar2 = inString.charAt(tempIndex + 2);
+
+                     position = Integer.parseInt(Character.toString(tempchar1) + Character.toString(tempchar2)) - 1;
+                     if (!OVERRIDE){
+                        sbMeter.setProgress(position);
+                     }
+                     else{
+                        if (position != sbMeter.getProgress())
+                           sendPacket(getPacket());
+                     }
+                     ivNeedle.setRotation((position - 11)*6);
+                  }
+               } catch (Exception e) {
+
+               }
+
+            }
+         });
+      }
+
+      public void cancel() {
+         running = false;
+         MainActivity.CONNECTED = false;
+         MainActivity.this.runOnUiThread(new Runnable() {
+            public void run() {
+               // Button btnConnect = (Button)
+               // findViewById(R.id.btnConnect);
+               // btnConnect.setText(R.string.button_connect);
+            }
+         });
+         // btConn.stop();
+      }
+   }
 }

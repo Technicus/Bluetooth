@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SimpleGhost.iml" filepath="$PROJECT_DIR$/SimpleGhost.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SimpleGhost/SimpleGhost-SimpleGhost.iml" filepath="$PROJECT_DIR$/SimpleGhost/SimpleGhost-SimpleGhost.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SimpleGhost-master.iml" filepath="$PROJECT_DIR$/SimpleGhost-master.iml" />
     </modules>
   </component>
 </project>
