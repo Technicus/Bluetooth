@@ -11,6 +11,10 @@
     <string name="buttonL000">[L000]</string>
     <string name="buttonConnect">Connect</string>
     <string name="buttonDisconnect">Disconnect</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Devices</string>
+    <string name="button_scan">Scan</string>
+    <string name="send">Send</string>
     <string name="DEVICE_UUID">39f7b019-b0da-4a59-ad73-061d4603b514</string>
 
 </resources>

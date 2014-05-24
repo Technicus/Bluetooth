@@ -98,7 +98,7 @@ public class MainActivity extends Activity {
     public void bluetoothConnection(View view) {
         //private final BluetoothSocket mmSocket;
         //private final BluetoothDevice mmDevice;
-        BluetoothConnectThread.start()
+        BluetoothConnectThread.start();
         BluetoothConnectThread confectionTest = new BluetoothConnectThread(mBluetoothAdapter);
         Toast.makeText(getApplicationContext(), "bluetoothConnection()",
                 Toast.LENGTH_SHORT).show();

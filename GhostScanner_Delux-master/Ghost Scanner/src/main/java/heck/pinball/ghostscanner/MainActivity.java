@@ -32,7 +32,7 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
      * {@link android.support.v4.app.FragmentStatePagerAdapter}.
      */
 
-    public static final String TAG = "MAIN";
+   public static final String TAG = "MAIN";
 
    public static final boolean DEBUG = true;
 

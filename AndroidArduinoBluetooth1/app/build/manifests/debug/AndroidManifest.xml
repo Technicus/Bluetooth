@@ -1,0 +1,13 @@
+<!-- From: file:/run/media/Technician/Expansion/Programming/Bluetooth/AndroidArduinoBluetooth1/app/src/main/AndroidManifest.xml --><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="Android.Arduino.Bluetooth">
+    <application android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name="Android.Arduino.Bluetooth.BluetoothTest">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-sdk android:minSdkVersion="4" android:targetSdkVersion="9"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <supports-screens android:anyDensity="true"/>
+</manifest>

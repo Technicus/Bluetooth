@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="main" >
+        <source path="/run/media/Technician/Expansion/Programming/Bluetooth/AndroidArduinoBluetooth1/app/src/main/res" >
+            <file
+                name="main"
+                path="/run/media/Technician/Expansion/Programming/Bluetooth/AndroidArduinoBluetooth1/app/src/main/res/layout/main.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                path="/run/media/Technician/Expansion/Programming/Bluetooth/AndroidArduinoBluetooth1/app/src/main/res/values/strings.xml"
+                qualifiers="" >
+                <string name="app_name" >BluetoothTest
+                </string>
+            </file>
+        </source>
+        <source path="/run/media/Technician/Expansion/Programming/Bluetooth/AndroidArduinoBluetooth1/app/build/res/rs/debug" />
+        <source path="/run/media/Technician/Expansion/Programming/Bluetooth/AndroidArduinoBluetooth1/app/build/res/generated/debug" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="/run/media/Technician/Expansion/Programming/Bluetooth/AndroidArduinoBluetooth1/app/src/debug/res" />
+    </dataSet>
+
+</merger>

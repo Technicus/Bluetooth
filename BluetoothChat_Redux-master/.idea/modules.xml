@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BluetoothChat_Redux.iml" filepath="$PROJECT_DIR$/BluetoothChat_Redux.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BluetoothChat_Redux-master.iml" filepath="$PROJECT_DIR$/BluetoothChat_Redux-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/bluetoothchat_redux/bluetoothchat_redux.iml" filepath="$PROJECT_DIR$/bluetoothchat_redux/bluetoothchat_redux.iml" />
     </modules>
   </component>

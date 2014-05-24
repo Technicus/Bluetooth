@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/GhostScannerDeluxBeta.iml" filepath="$PROJECT_DIR$/GhostScannerDeluxBeta.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ghostScannerDeluxBeta/ghostScannerDeluxBeta.iml" filepath="$PROJECT_DIR$/ghostScannerDeluxBeta/ghostScannerDeluxBeta.iml" />
+    </modules>
+  </component>
+</project>
+
