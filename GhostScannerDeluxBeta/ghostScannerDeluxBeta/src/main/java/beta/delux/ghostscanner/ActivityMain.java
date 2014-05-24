@@ -27,6 +27,16 @@ public class ActivityMain extends ActionBarActivity implements ActionBar.TabList
      * may be best to switch to a
      * {@link android.support.v4.app.FragmentStatePagerAdapter}.
      */
+
+   /*simple Ghost
+   private Button bluetoothOn, bluetoothOff, bluetoothVisible, bluetoothlist, L000, L007, bluetoothConnect, bluetoothDisconnect, bluetoothDiscover;
+   private BluetoothAdapter mBluetoothAdapter;
+   private Set<BluetoothDevice> pairedDevices;
+   private ListView listViewDiscovery;
+   private static final UUID BT_UUID = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB");
+   private UUID uuid = UUID.fromString("39f7b019-b0da-4a59-ad73-061d4603b514");
+   //Simple Ghost*/
+
     SectionsPagerAdapter mSectionsPagerAdapter;
 
     /**

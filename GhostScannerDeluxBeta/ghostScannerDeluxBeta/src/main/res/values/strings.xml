@@ -33,4 +33,16 @@
 
 
 
+    <string name="buttonBluetooth_1">Bluetooth On</string>
+    <string name="buttonBluetooth_0">Bluetooth Off</string>
+    <string name="buttonDiscoverable">Discoverable</string>
+    <string name="buttonDiscover">Discover</string>
+    <string name="send">Send</string>
+    <string name="buttonL007">[L007]</string>
+    <string name="buttonL000">[L000]</string>
+    <string name="buttonConnect">Connect</string>
+    <string name="buttonDisconnect">Disconnect</string>
+    <string name="DEVICE_UUID">39f7b019-b0da-4a59-ad73-061d4603b514</string>
+
+
 </resources>
