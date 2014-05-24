@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SimpleGhost</string>
+    <string name="action_settings">Settings</string>
+    <string name="buttonBluetooth_1">Bluetooth On</string>
+    <string name="buttonBluetooth_0">Bluetooth Off</string>
+    <string name="buttonDiscoverable">Discoverable</string>
+    <string name="buttonDiscover">Discover</string>
+    <string name="button_scan">Scan</string>
+    <string name="send">Send</string>
+    <string name="buttonL007">[L007]</string>
+    <string name="buttonL000">[L000]</string>
+    <string name="buttonConnect">Connect</string>
+    <string name="buttonDisconnect">Disconnect</string>
+    <string name="DEVICE_UUID">39f7b019-b0da-4a59-ad73-061d4603b514</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Devices</string>
+
+</resources>
