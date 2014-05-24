@@ -98,7 +98,7 @@ public class MainActivity extends Activity {
     public void bluetoothConnection(View view) {
         //private final BluetoothSocket mmSocket;
         //private final BluetoothDevice mmDevice;
-        BluetoothConnectThread.start();
+        //BluetoothConnectThread.start();
         BluetoothConnectThread confectionTest = new BluetoothConnectThread(mBluetoothAdapter);
         Toast.makeText(getApplicationContext(), "bluetoothConnection()",
                 Toast.LENGTH_SHORT).show();
@@ -156,7 +156,7 @@ public class MainActivity extends Activity {
         private final BluetoothSocket mmSocket;
         private final BluetoothDevice mmDevice;
 
-        public BluetoothConnectThread(BluetoothDevice device) {
+        public BluetoothConnectThread(BluetoothAdapter device) {
             // Use a temporary object that is later assigned to mmSocket,
             // because mmSocket is final
             BluetoothSocket tmp = null;

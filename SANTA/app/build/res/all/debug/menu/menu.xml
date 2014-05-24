@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/menu_about_info" android:title="@string/menu_about_info_title"
+		android:icon="@android:drawable/ic_menu_info_details"></item>
+	<item android:id="@+id/menu_settings" android:title="@string/menu_settings_title"
+		android:icon="@android:drawable/ic_menu_preferences"></item>
+</menu>  
+<!-- From: file:/run/media/Technician/Expansion/Programming/Android_04/SANTA/app/src/main/res/menu/menu.xml -->

@@ -1,0 +1,11 @@
+Error:Execution failed for task ':GhostScanner-Delux:processDebugResources'.
+> com.android.ide.common.internal.LoggedErrorException: Failed to run command:
+   /opt/android-sdk/build-tools/19.0.3/aapt package -f --no-crunch -I /opt/android-sdk/platforms/android-19/android.jar -M /run/media/Technician/Expansion/Programming/Bluetooth/GhostScanner-Delux_Beta/GhostScanner-Delux/build/manifests/debug/AndroidManifest.xml -S /run/media/Technician/Expansion/Programming/Bluetooth/GhostScanner-Delux_Beta/GhostScanner-Delux/build/res/all/debug -A /run/media/Technician/Expansion/Programming/Bluetooth/GhostScanner-Delux_Beta/GhostScanner-Delux/build/assets/debug -m -J /run/media/Technician/Expansion/Programming/Bluetooth/GhostScanner-Delux_Beta/GhostScanner-Delux/build/source/r/debug -F /run/media/Technician/Expansion/Programming/Bluetooth/GhostScanner-Delux_Beta/GhostScanner-Delux/build/libs/GhostScanner-Delux-debug.ap_ --debug-mode --custom-package beta.ghostscanner_delux
+  Error Code:
+   1
+  Output:
+   W/ResourceType(  399): ResXMLTree_node header size (nil) is too small.
+   /run/media/Technician/Expansion/Programming/Bluetooth/GhostScanner-Delux_Beta/GhostScanner-Delux/build/res/all/debug/menu/main.xml:5: error: No resource identifier found for attribute 'showAsAction' in package 'beta.ghostscanner_delux'
+
+
+Error:(5) No resource identifier found for attribute 'showAsAction' in package 'beta.delux.ghostscanner'
