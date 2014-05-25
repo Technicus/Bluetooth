@@ -45,6 +45,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/on"
+                android:onClick="bluetoothOn"
                 android:layout_below="@+id/text"
                 android:layout_toLeftOf="@+id/turnOff"
                 android:layout_marginRight="28dp"/>

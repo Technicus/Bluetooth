@@ -54,7 +54,7 @@ public class SimpleGhost extends Activity {
       mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
    }
 
-   public void bluetoothOn(View view) {
+   /*public void bluetoothOn(View view) {
       if (!mBluetoothAdapter.isEnabled()) {
          Intent turnOn = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
          startActivityForResult(turnOn, 0);
@@ -64,7 +64,7 @@ public class SimpleGhost extends Activity {
          Toast.makeText(getApplicationContext(), "Already on",
              Toast.LENGTH_LONG).show();
       }
-   }
+   }*/
 
    public void bluetoothDiscover(View view) {
       pairedDevices = mBluetoothAdapter.getBondedDevices();
