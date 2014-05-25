@@ -1,0 +1,109 @@
+<!--
+&lt;!&ndash;<android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="beta.ArduinoidBlue.ActivityMain" />&ndash;&gt;
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+<TextView
+    android:id="@+id/label"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Type here:"/>
+<EditText
+    android:id="@+id/entry"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:drawable/editbox_background"
+    android:layout_below="@id/label"/>
+<Button
+    android:id="@+id/open"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/entry"
+    android:layout_alignParentRight="true"
+    android:layout_marginLeft="10dip"
+    android:text="Open" />
+<Button
+    android:id="@+id/send"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toLeftOf="@id/open"
+    android:layout_alignTop="@id/open"
+    android:text="Send" />
+<Button
+    android:id="@+id/close"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toLeftOf="@id/send"
+    android:layout_alignTop="@id/send"
+    android:text="Close" />
+</RelativeLayout>
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/Text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp" >
+
+        <Button
+            android:id="@+id/turnOn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/on" />
+
+        <Button
+            android:id="@+id/turnOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/off" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="80dp" >
+
+        <Button
+            android:id="@+id/paired"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/List" />
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Find" />
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp" >
+
+        </ListView>
+
+    </LinearLayout>
+
+</RelativeLayout>

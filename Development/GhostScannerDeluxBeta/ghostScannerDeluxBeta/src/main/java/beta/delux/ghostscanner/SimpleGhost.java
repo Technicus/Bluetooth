@@ -1,30 +1,11 @@
 package beta.delux.ghostscanner;
 
 import android.app.Activity;
-import android.bluetooth.BluetoothAdapter;
-import android.bluetooth.BluetoothDevice;
-import android.bluetooth.BluetoothSocket;
-import android.content.BroadcastReceiver;
-import android.content.Context;
-import android.content.Intent;
-import android.content.IntentFilter;
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.ListView;
-import android.widget.Toast;
-
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Set;
-import java.util.UUID;
 
 //More imports
 
 
-public class SimpleGhost extends Activity {
+public class SimpleGhost extends Activity {/*
 
    private Button bluetoothOn, bluetoothOff, bluetoothVisible, bluetoothlist, L000, L007, bluetoothConnect, bluetoothDisconnect, bluetoothDiscover;
    private BluetoothAdapter mBluetoothAdapter;
@@ -32,16 +13,16 @@ public class SimpleGhost extends Activity {
    private ListView listViewDiscovery;
    private static final UUID BT_UUID = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB");
    private UUID uuid = UUID.fromString("39f7b019-b0da-4a59-ad73-061d4603b514");
-/*
+*//*
     @Override
     public void run() {
-    }*/
+    }*//*
 
    @Override
    protected void onCreate(Bundle savedInstanceState) {
       super.onCreate(savedInstanceState);
       setContentView(R.layout.activity_main);
-      /*bluetoothOn = (Button) findViewById(R.id.buttonBluetooth_1);
+      *//*bluetoothOn = (Button) findViewById(R.id.buttonBluetooth_1);
       bluetoothOff = (Button) findViewById(R.id.buttonBluetooth_0);
       bluetoothDiscover = (Button) findViewById(R.id.buttonDiscover);
       bluetoothVisible = (Button) findViewById(R.id.buttonDiscoverable);
@@ -50,11 +31,11 @@ public class SimpleGhost extends Activity {
       bluetoothDisconnect = (Button) findViewById(R.id.buttonDisconnect);
       L000 = (Button) findViewById(R.id.buttonL000);
       L007 = (Button) findViewById(R.id.buttonL007);
-      listViewDiscovery = (ListView) findViewById(R.id.listViewDiscovery);*/
+      listViewDiscovery = (ListView) findViewById(R.id.listViewDiscovery);*//*
       mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
    }
 
-   /*public void bluetoothOn(View view) {
+   *//*public void bluetoothOn(View view) {
       if (!mBluetoothAdapter.isEnabled()) {
          Intent turnOn = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
          startActivityForResult(turnOn, 0);
@@ -64,7 +45,7 @@ public class SimpleGhost extends Activity {
          Toast.makeText(getApplicationContext(), "Already on",
              Toast.LENGTH_LONG).show();
       }
-   }*/
+   }*//*
 
    public void bluetoothDiscover(View view) {
       pairedDevices = mBluetoothAdapter.getBondedDevices();
@@ -207,11 +188,11 @@ public class SimpleGhost extends Activity {
          // Do work to manage the connection (in a separate thread)
          manageConnectedSocket(mmSocket);
       }
-      /** Will cancel an in-progress connection, and close the socket */
+      *//** Will cancel an in-progress connection, and close the socket *//*
       public void cancel() {
          try {
             mmSocket.close();
          } catch (IOException e) { }
       }
-   }
+   }*/
 }

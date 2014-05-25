@@ -7,8 +7,8 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/bluetoothchat_redux" />
+            <option value="/run/media/Technician/Expansion/Programming/Bluetooth/Reference/BluetoothChat_Redux-master" />
+            <option value="/run/media/Technician/Expansion/Programming/Bluetooth/Reference/BluetoothChat_Redux-master/bluetoothchat_redux" />
           </set>
         </option>
       </GradleProjectSettings>

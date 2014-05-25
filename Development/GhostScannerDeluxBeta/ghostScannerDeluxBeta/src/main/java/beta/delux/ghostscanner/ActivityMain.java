@@ -1,5 +1,7 @@
 package beta.delux.ghostscanner;
 
+import android.bluetooth.BluetoothAdapter;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -18,6 +20,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.SeekBar;
+import android.widget.Toast;
 
 import java.util.Locale;
 
@@ -67,6 +70,7 @@ public class ActivityMain extends ActionBarActivity implements ActionBar.TabList
    private static boolean CONNECTED = false;
    public static boolean OVERRIDE = false;
 
+   private BluetoothAdapter mBluetoothAdapter;
    private Button btnConnect;
 
    // Slider positioning
@@ -270,7 +274,7 @@ public class ActivityMain extends ActionBarActivity implements ActionBar.TabList
     }
 
    public void bluetoothOn(View view) {
-    /*  if (!mBluetoothAdapter.isEnabled()) {
+      if (!mBluetoothAdapter.isEnabled()) {
          Intent turnOn = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
          startActivityForResult(turnOn, 0);
          Toast.makeText(getApplicationContext(), "Turned on"
@@ -278,7 +282,7 @@ public class ActivityMain extends ActionBarActivity implements ActionBar.TabList
       } else {
          Toast.makeText(getApplicationContext(), "Already on",
              Toast.LENGTH_LONG).show();
-      }*/
+      }
    }
 
    public class ThreadUpdate extends Thread {
