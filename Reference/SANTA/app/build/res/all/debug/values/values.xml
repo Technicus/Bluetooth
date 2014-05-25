@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- From: file:/run/media/Technician/Expansion/Programming/Android_04/SANTA/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/run/media/Technician/Expansion/Programming/Bluetooth/Reference/SANTA/app/src/main/res/values/colors.xml -->
     <eat-comment />
 
     <color name="black">#000</color>
     <color name="white">#fff</color>
-    <!-- From: file:/run/media/Technician/Expansion/Programming/Android_04/SANTA/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/run/media/Technician/Expansion/Programming/Bluetooth/Reference/SANTA/app/src/main/res/values/strings.xml -->
     <eat-comment />
 
     <string name="app_name">S.A.N.T.A.</string>
@@ -32,7 +32,7 @@
     <string name="title_activity_main">S.A.N.T.A.</string>
     <string name="title_other_devices">Other Devices</string>
     <string name="title_paired_devices">Paired Devices</string>
-    <!-- From: file:/run/media/Technician/Expansion/Programming/Android_04/SANTA/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/run/media/Technician/Expansion/Programming/Bluetooth/Reference/SANTA/app/src/main/res/values/styles.xml -->
     <eat-comment />
 
     <style name="AppTheme" parent="android:Theme.Light" />

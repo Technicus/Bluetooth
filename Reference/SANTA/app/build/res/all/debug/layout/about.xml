@@ -13,4 +13,4 @@
 		android:layout_height="wrap_content" android:text="@string/packet_info"
 		android:textColor="@color/black"></TextView>
 </LinearLayout>
-<!-- From: file:/run/media/Technician/Expansion/Programming/Android_04/SANTA/app/src/main/res/layout/about.xml -->
+<!-- From: file:/run/media/Technician/Expansion/Programming/Bluetooth/Reference/SANTA/app/src/main/res/layout/about.xml -->

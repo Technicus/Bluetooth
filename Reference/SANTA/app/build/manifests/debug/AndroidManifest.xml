@@ -1,4 +1,4 @@
-<!-- From: file:/run/media/Technician/Expansion/Programming/Android_04/SANTA/app/src/main/AndroidManifest.xml --><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.colecago.santa">
+<!-- From: file:/run/media/Technician/Expansion/Programming/Bluetooth/Reference/SANTA/app/src/main/AndroidManifest.xml --><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.colecago.santa">
 
     <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="14"/>
     <uses-permission android:name="android.permission.BLUETOOTH"/>

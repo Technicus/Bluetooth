@@ -7,8 +7,8 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/SimpleGhost" />
+            <option value="/run/media/Technician/Expansion/Programming/Bluetooth/Development/SimpleGhost_bak" />
+            <option value="/run/media/Technician/Expansion/Programming/Bluetooth/Development/SimpleGhost_bak/SimpleGhost" />
           </set>
         </option>
       </GradleProjectSettings>

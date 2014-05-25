@@ -41,7 +41,7 @@ public class SimpleGhost extends Activity {
    protected void onCreate(Bundle savedInstanceState) {
       super.onCreate(savedInstanceState);
       setContentView(R.layout.activity_main);
-      bluetoothOn = (Button) findViewById(R.id.buttonBluetooth_1);
+      /*bluetoothOn = (Button) findViewById(R.id.buttonBluetooth_1);
       bluetoothOff = (Button) findViewById(R.id.buttonBluetooth_0);
       bluetoothDiscover = (Button) findViewById(R.id.buttonDiscover);
       bluetoothVisible = (Button) findViewById(R.id.buttonDiscoverable);
@@ -50,7 +50,7 @@ public class SimpleGhost extends Activity {
       bluetoothDisconnect = (Button) findViewById(R.id.buttonDisconnect);
       L000 = (Button) findViewById(R.id.buttonL000);
       L007 = (Button) findViewById(R.id.buttonL007);
-      listViewDiscovery = (ListView) findViewById(R.id.listViewDiscovery);
+      listViewDiscovery = (ListView) findViewById(R.id.listViewDiscovery);*/
       mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
    }
 

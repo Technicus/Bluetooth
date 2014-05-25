@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="appcompat-v7-19.1.0">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/SimpleGhost/build/exploded-aar/com.android.support/appcompat-v7/19.1.0/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/SimpleGhost/build/exploded-aar/com.android.support/appcompat-v7/19.1.0/res" />
+      <root url="file:///run/media/Technician/Expansion/Programming/Bluetooth/Development/SimpleGhost_bak/SimpleGhost/build/exploded-aar/com.android.support/appcompat-v7/19.1.0/res" />
+      <root url="jar:///run/media/Technician/Expansion/Programming/Bluetooth/Development/SimpleGhost_bak/SimpleGhost/build/exploded-aar/com.android.support/appcompat-v7/19.1.0/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

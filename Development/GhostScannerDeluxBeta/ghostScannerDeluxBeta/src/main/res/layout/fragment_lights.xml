@@ -12,4 +12,26 @@
               android:textSize="20dp"
               android:layout_centerInParent="true"/>
 
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/buttonL000"
+            android:text="@string/buttonL000"
+            android:onClick="L000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <Button
+            android:id="@+id/buttonL007"
+            android:text="@string/buttonL007"
+            android:onClick="L007"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
 </RelativeLayout>
